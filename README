@@ -1,0 +1,31 @@
+== Encryption
+
+
+
+== Introduction
+
+A simple and useful way to encrypt strings. Useful for encrypting
+strings in emails with urls links.
+
+Usage
+  encrypted_string = Encryption.encrypt_aes('some string')
+  string = Encryption.decrypt_aes(encrypted_string)
+  
+  
+  Can also be used in object form
+  
+  e = Encryption.new
+  cipher_text  = e.encrypt_aes('some string to encrypt')
+  e.decrypt_aes(cipher_text)
+  
+  I use configatron (available at github) to set the @@encryption_key however you could just as well add your own simple string here. I also considered making this key accessible via a writer, but decided against it as this could get confusing. Please let me know if you use this or find it useful! Thanks --mark
+
+== License
+
+MIT license.
+
+== Author
+
+Mark McDonald <mark.mcdonald@gmail.com>
+
+July 4th, 2009
